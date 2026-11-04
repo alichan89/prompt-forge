@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>提示词工坊 · 10 秒生成专业 AI 提示词</title>
+<meta name="description" content="选场景、填空，自动生成结构完整的 AI 提示词。覆盖小红书文案、短视频脚本、简历优化、长文摘要、翻译润色、概念讲解、会议纪要、数据分析 8 个高频场景。免费、无需注册、数据只在本地。">
+<meta name="keywords" content="AI提示词,prompt模板,提示词生成器,ChatGPT提示词,DeepSeek提示词,AI写作">
+<meta property="og:title" content="提示词工坊 · 10 秒生成专业 AI 提示词">
+<meta property="og:description" content="8 个高频场景，填空即得专业提示词。免费、无需注册。">
+<meta property="og:type" content="website">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="./">
+      <span class="brand-mark">&gt;</span>
+      <span>提示词工坊</span>
+    </a>
+    <nav class="nav">
+      <a href="#workbench">工具</a>
+      <a href="#pack">合集</a>
+    </nav>
+    <div class="topbar-right">
+      <span class="pill-ok">免费 · 无需注册</span>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero">
+    <h1>把一句话，变成专业提示词</h1>
+    <p>选场景、填空，10 秒生成结构完整的 AI 指令。不用懂提示词工程，复制粘贴就能用。</p>
+    <div class="hero-meta">
+      <span>8 个高频场景</span>
+      <i></i>
+      <span>纯本地运行</span>
+      <i></i>
+      <span>不收集任何输入</span>
+    </div>
+  </section>
+
+  <section class="wb" id="workbench">
+
+    <aside class="panel side">
+      <h2>选择场景</h2>
+      <div class="sc-list" id="scenarioList"></div>
+    </aside>
+
+    <section class="panel form-panel">
+      <div class="form-head">
+        <div>
+          <h2 id="formTitle">小红书文案</h2>
+          <p id="formDesc"></p>
+        </div>
+        <button class="btn btn-ghost btn-sm" id="sampleBtn" type="button">填入示例</button>
+      </div>
+      <form id="formFields" class="fields" novalidate></form>
+      <p class="form-foot"><span class="dot"></span>输入只保存在你自己的浏览器里</p>
+    </section>
+
+    <section class="panel out-panel">
+      <div class="out-head">
+        <div class="out-title">
+          生成结果
+          <span class="out-count" id="charCount"></span>
+        </div>
+        <button class="btn btn-accent btn-sm" id="copyBtn" type="button" disabled>复制</button>
+      </div>
+      <div class="out-body">
+        <pre id="outText" hidden></pre>
+        <div class="out-empty" id="outEmpty"></div>
+      </div>
+    </section>
+
+  </section>
+
+  <section class="pack-wrap" id="pack">
+    <div class="pack">
+      <div class="pack-main">
+        <span class="pack-tag">即将上架</span>
+        <h2>提示词合集 · 200 条实战模板</h2>
+        <p>网站上这 8 个场景是免费的。合集里是 200 条按行业拆分、可直接套用的成品提示词：电商详情页、求职面试、教师备课、律师文书、外贸开发信、自媒体选题……每条都标注了适用型号和注意事项。</p>
+        <ul class="pack-list">
+          <li>按 18 个行业分类，附适用场景说明</li>
+          <li>每条都可直接复制，不需要改参数</li>
+          <li>一次买断，后续新增免费更新</li>
+        </ul>
+      </div>
+      <div class="pack-card">
+        <div class="pack-price"><span>¥</span>29</div>
+        <div class="pack-note">一次买断 · 永久更新</div>
+        <button class="btn btn-accent btn-block" id="packBtn" type="button">获取合集</button>
+        <p class="pack-tiny">整理中，上线后这里可直接购买</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="foot-inner">
+    <span>© 2026 提示词工坊</span>
+    <span class="foot-sep">·</span>
+    <span>工具永久免费</span>
+    <span class="foot-sep">·</span>
+    <a href="#pack">合集</a>
+  </div>
+</footer>
+
+<div class="toast" id="toast"></div>
+
+<script src="app.js"></script>
+</body>
+</html>
